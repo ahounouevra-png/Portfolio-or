@@ -69,3 +69,25 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+
+// ---------------------------------------------------------------
+// LIGHTBOX — affichage en grand des images de projets (Hardware / Software)
+// ---------------------------------------------------------------
+function openLightbox(src, cat, title, desc) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox-cat').textContent = cat;
+  document.getElementById('lightbox-title').textContent = title;
+  document.getElementById('lightbox-desc').textContent = desc;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(event) {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
+

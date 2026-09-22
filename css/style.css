@@ -872,6 +872,118 @@
     .footer-tagline { margin-left: auto; margin-right: auto; }
   }
 
+  /* IMAGES DE PROJET CLIQUABLES */
+  .project-img.clickable { cursor: pointer; position: relative; }
+
+  .zoom-hint {
+    position: absolute;
+    inset: 0;
+    background: rgba(32,43,39,0.45);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .project-img.clickable:hover .zoom-hint { opacity: 1; }
+  .project-img.clickable:hover img { transform: scale(1.05); }
+  .project-img img { transition: transform 0.3s; }
+
+  /* LIGHTBOX */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 26, 23, 0.86);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s;
+    padding: 40px 20px;
+  }
+
+  .lightbox.open { opacity: 1; visibility: visible; }
+
+  .lightbox-content {
+    max-width: 720px;
+    width: 100%;
+    max-height: 88vh;
+    background: var(--card);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.4);
+    transform: scale(0.94);
+    transition: transform 0.25s;
+  }
+
+  .lightbox.open .lightbox-content { transform: scale(1); }
+
+  .lightbox-content img {
+    width: 100%;
+    max-height: 58vh;
+    object-fit: contain;
+    background: #0d1210;
+    display: block;
+  }
+
+  .lightbox-caption { padding: 22px 26px; overflow-y: auto; }
+
+  .lightbox-cat {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: #fff;
+    background: var(--grad);
+    padding: 4px 11px;
+    border-radius: 99px;
+    margin-bottom: 10px;
+  }
+
+  .lightbox-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+
+  .lightbox-desc { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+  .lightbox-close {
+    position: absolute;
+    top: 24px; right: 28px;
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    z-index: 1001;
+  }
+
+  .lightbox-close:hover { background: rgba(255,255,255,0.25); }
+
+  @media (max-width: 600px) {
+    .lightbox-content img { max-height: 42vh; }
+    .lightbox-close { top: 14px; right: 14px; }
+  }
+
   /* BOTTOM TAB BAR — mobile only */
   .tabbar {
     display: none;

@@ -189,14 +189,20 @@
     <div class="h3-styled"><i class="fa-solid fa-microchip"></i> Hardware</div>
     <div class="projects-grid">
       <div class="project-card">
-        <div class="project-img"><img src="image/capture_de_la_pile_bios.png" alt="Pile CMOS" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-battery-full\'></i>'"></div>
+        <div class="project-img clickable" onclick="openLightbox('image/capture_de_la_pile_bios.png','Hardware','Localisation et extraction de la pile CMOS','Identification de l\'emplacement de la pile CMOS sur la carte mère et retrait propre afin de réinitialiser les paramètres du BIOS.')">
+          <img src="image/capture_de_la_pile_bios.png" alt="Pile CMOS" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-battery-full\'></i>'">
+          <div class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
         <div class="project-body">
           <div class="project-cat">Hardware</div>
           <div class="project-title">Localisation et extraction de la pile CMOS</div>
         </div>
       </div>
       <div class="project-card">
-        <div class="project-img"><img src="image/projet_bricolage.jpg" alt="BIOS" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-screwdriver-wrench\'></i>'"></div>
+        <div class="project-img clickable" onclick="openLightbox('image/projet_bricolage.jpg','Hardware','Remplacement propre de la pile BIOS','Remplacement de la pile bouton du BIOS afin de restaurer correctement l\'horloge système et les réglages matériels de la carte mère.')">
+          <img src="image/projet_bricolage.jpg" alt="BIOS" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-screwdriver-wrench\'></i>'">
+          <div class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
         <div class="project-body">
           <div class="project-cat">Hardware</div>
           <div class="project-title">Remplacement propre de la pile BIOS</div>
@@ -208,9 +214,10 @@
 
     <div class="h3-styled"><i class="fa-solid fa-laptop-code"></i> Software</div>
     <div class="projects-grid">
-      <div class="project-card" onclick="openGallery()">
-        <div class="project-img">
+      <div class="project-card">
+        <div class="project-img clickable" onclick="openLightbox('image/projet_portfolio.png','Software — Portfolio','Projet complet : HTML / CSS / Design / Responsive','Développement complet de ce portfolio personnel en HTML, CSS et JavaScript, avec une attention particulière portée au design et au responsive.')">
           <img src="image/projet_portfolio.png" alt="Portfolio">
+          <div class="zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
         <div class="project-body">
           <div class="project-cat">Software — Portfolio</div>
@@ -477,6 +484,19 @@
   </div>
 </div>
 
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox(event)"><i class="fa-solid fa-xmark"></i></button>
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption">
+      <div class="lightbox-cat" id="lightbox-cat"></div>
+      <div class="lightbox-title" id="lightbox-title"></div>
+      <p class="lightbox-desc" id="lightbox-desc"></p>
+    </div>
+  </div>
+</div>
 
 <!-- Script du portfolio : navigation + formulaire de contact (voir js/script.js) -->
 <script src="js/script.js" defer></script>
