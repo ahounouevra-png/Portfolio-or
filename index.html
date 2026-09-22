@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio AHOUNOU Evrard</title>
+  <link rel="icon" type="image/png" href="image/favicon.png">
+
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Feuille de style du portfolio (voir css/style.css) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <div class="avatar-wrap">
+      <img src="image/ma_photo.jpg" alt="AHOUNOU Evrard">
+    </div>
+    <div class="sidebar-name">AHOUNOU Evrard</div>
+    <div class="sidebar-role">BTS SIO · SISR</div>
+  </div>
+  <ul class="nav-links">
+    <li><button data-section="accueil" class="active"><i class="fa-solid fa-house nav-icon"></i><span>Accueil</span></button></li>
+    <li><button data-section="presentation"><i class="fa-solid fa-user nav-icon"></i><span>Présentation</span></button></li>
+    <li><button data-section="competences"><i class="fa-solid fa-wrench nav-icon"></i><span>Compétences</span></button></li>
+    <li><button data-section="projets"><i class="fa-solid fa-briefcase nav-icon"></i><span>Projets</span></button></li>
+    <li><button data-section="synthese"><i class="fa-solid fa-chart-column nav-icon"></i><span>Synthèse</span></button></li>
+    <li><button data-section="veille"><i class="fa-solid fa-magnifying-glass nav-icon"></i><span>Veille Techno.</span></button></li>
+    <li><button data-section="certifications"><i class="fa-solid fa-award nav-icon"></i><span>Certifications</span></button></li>
+    <li><button data-section="cv"><i class="fa-solid fa-file-lines nav-icon"></i><span>CV</span></button></li>
+    <li><button data-section="contact"><i class="fa-solid fa-envelope nav-icon"></i><span>Contact</span></button></li>
+  </ul>
+</nav>
+
+<main class="main">
+
+  <!-- ACCUEIL -->
+  <section id="accueil" class="active">
+    <div class="hero">
+      <div class="hero-tag">
+        <div class="hero-dot"></div>
+        Portfolio Session 2025-2027
+      </div>
+      <h1>Bonjour,<br>Je m'appelle <span>AHOUNOU Evrard</span></h1>
+      <p class="hero-sub"></p>
+
+      <div class="hero-btns">
+        <a href="dossier/AHOUNOU_EvrardCV.pdf" target="_blank" class="btn-primary">
+          <i class="fa-solid fa-file-pdf"></i> Télécharger mon CV
+        </a>
+        <button class="btn-ghost" onclick="showSection('contact')">
+          <i class="fa-solid fa-envelope"></i> Me contacter
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Certifications Cisco</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">18</div>
+          <div class="stat-label">Compétences</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">SISR</div>
+          <div class="stat-label">Option choisie</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h3-styled" style="margin-top:50px;">Ce que je fais</div>
+    <div class="trio">
+      <div class="trio-card c-yellow">
+        <div class="spark"><i class="fa-solid fa-globe"></i></div>
+        <h3>Réseaux & Infrastructure</h3>
+        <p>Administration et configuration d'équipements réseaux. Conception et simulation d'infrastructures d'entreprise interconnectées et sécurisées.</p>
+      </div>
+      <div class="trio-card c-pink">
+        <div class="spark"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Cybersécurité</h3>
+        <p>Mise en œuvre des bonnes pratiques de sécurité informatique. Veille sur les vulnérabilités (CVE), application des directives de l'ANSSI et sécurisation des accès.</p>
+      </div>
+      <div class="trio-card c-blue">
+        <div class="spark"><i class="fa-solid fa-desktop"></i></div>
+        <h3>Systèmes & Web</h3>
+        <p>Administration de serveurs (Windows/Linux), virtualisation, ainsi que déploiement et maintenance d'applications et sites web dynamiques.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRÉSENTATION -->
+  <section id="presentation">
+    <div class="section-label">À propos</div>
+    <h2 class="section-title">Présentation</h2>
+
+    <div class="glass-card">
+      <p class="pres-text">
+        Je m'appelle <strong style="color:var(--text)">AHOUNOU Evrard</strong>, étudiant en BTS SIO (Services Informatiques aux Organisations) (option SISR). Je me forme à l'administration des réseaux, à la virtualisation, à la cybersécurité et à la gestion d'infrastructures. J'aime apprendre en pratiquant et je construis progressivement mes compétences à travers des projets concrets.
+        <br><br>
+        Mon objectif est de devenir un professionnel compétent et polyvalent dans le domaine de l'informatique, capable de gérer des systèmes complexes et de contribuer à la transformation numérique des organisations.
+      </p>
+
+      <div class="info-row">
+        <div class="info-block">
+          <div class="info-label">Formation</div>
+          <div class="info-val">BTS SIO — Option SISR</div>
+        </div>
+        <div class="info-block">
+          <div class="info-label">Centre de formation</div>
+          <div class="info-val">MY DIGITALSCHOOL RENNES</div>
+        </div>
+        <div class="info-block">
+          <div class="info-label">Session</div>
+          <div class="info-val">2025 - 2027</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <div class="section-label">Compétences</div>
+    <h2 class="section-title">Mes compétences</h2>
+
+    <div class="card">
+      <div class="skill-group">
+        <div class="grp-label">Réseaux & Systèmes</div>
+        <div class="skill-pills">
+          <span class="skill-pill"><i class="fa-solid fa-globe"></i> Administration réseaux</span>
+          <span class="skill-pill"><i class="fa-solid fa-server"></i> Virtualisation</span>
+          <span class="skill-pill"><i class="fa-brands fa-linux"></i> Linux</span>
+          <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> Gestion DNS</span>
+          <span class="skill-pill"><i class="fa-solid fa-diagram-project"></i> Protocoles TCP/IP</span>
+          <span class="skill-pill"><i class="fa-brands fa-windows"></i> Windows/linux Server</span>
+          <span class="skill-pill"><i class="fa-solid fa-folder-tree"></i> Active Directory</span>
+          <span class="skill-pill"><i class="fa-solid fa-server"></i> Serveurs de virtualisation</span>
+          <span class="skill-pill"><i class="fa-solid fa-desktop"></i> Serveurs de surveillance</span>
+          <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> Supervision (centreon, Zabbix)</span>
+          <span class="skill-pill"><i class="fa-brands fa-docker"></i> Conteneurisation (Docker)</span>
+          <span class="skill-pill"><i class="fa-solid fa-gears"></i> Gestion de configuration (Ansible)</span>
+          <span class="skill-pill"><i class="fa-solid fa-headset"></i> Gestion de parc et helpdesk</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="grp-label">Sécurité</div>
+        <div class="skill-pills">
+          <span class="skill-pill"><i class="fa-solid fa-lock"></i> Cybersécurité</span>
+          <span class="skill-pill"><i class="fa-solid fa-shield-cat"></i> Bonnes pratiques ANSSI / CERT-FR</span>
+          <span class="skill-pill"><i class="fa-solid fa-fire-extinguisher"></i> Firewalls/pfsense</span>
+          <span class="skill-pill"><i class="fa-solid fa-key"></i> VPN</span>
+          <span class="skill-pill"><i class="fa-solid fa-box-archive"></i> Sauvegarde</span>
+        </div>
+      </div>
+
+      <div class="skill-group" style="margin-bottom:0;">
+        <div class="grp-label">Outils & Environnements</div>
+        <div class="skill-pills">
+          <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> Cisco Packet Tracer</span>
+          <span class="skill-pill"><i class="fa-solid fa-graduation-cap"></i> Cisco NetAcad</span>
+          <span class="skill-pill"><i class="fa-solid fa-cubes"></i> VMware Workstation</span>
+          <span class="skill-pill"><i class="fa-solid fa-box"></i> VirtualBox</span>
+          <span class="skill-pill"><i class="fa-solid fa-shield-halved"></i> pfSense</span>
+          <span class="skill-pill"><i class="fa-solid fa-chart-simple"></i> Zabbix</span>
+          <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Centreon</span>
+          <span class="skill-pill"><i class="fa-solid fa-code-compare"></i> Ansible</span>
+          <span class="skill-pill"><i class="fa-brands fa-github"></i> Git / GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <div class="section-label">Réalisations</div>
+    <h2 class="section-title">Projets</h2>
+
+    <div class="h3-styled"><i class="fa-solid fa-microchip"></i> Hardware</div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img"><img src="image/capture_de_la_pile_bios.png" alt="Pile CMOS" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-battery-full\'></i>'"></div>
+        <div class="project-body">
+          <div class="project-cat">Hardware</div>
+          <div class="project-title">Localisation et extraction de la pile CMOS</div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><img src="image/projet_bricolage.jpg" alt="BIOS" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-screwdriver-wrench\'></i>'"></div>
+        <div class="project-body">
+          <div class="project-cat">Hardware</div>
+          <div class="project-title">Remplacement propre de la pile BIOS</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-sep">
+
+    <div class="h3-styled"><i class="fa-solid fa-laptop-code"></i> Software</div>
+    <div class="projects-grid">
+      <div class="project-card" onclick="openGallery()">
+        <div class="project-img">
+          <img src="image/projet_portfolio.png" alt="Portfolio">
+        </div>
+        <div class="project-body">
+          <div class="project-cat">Software — Portfolio</div>
+          <div class="project-title">Projet complet : HTML / CSS / Design / Responsive</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-sep">
+
+    <div class="h3-styled"><i class="fa-solid fa-cloud-arrow-up"></i> Migration & Déploiement</div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img" style="font-size:44px"><i class="fa-solid fa-rotate"></i></div>
+        <div class="project-body">
+          <div class="project-cat">DevOps — Migration</div>
+          <div class="project-title">Migration WordPress vers N0C</div>
+          <a class="table-link" href="https://ahounouevra-png.github.io/wordpress/" target="_blank"><i class="fa-solid fa-file-pdf"></i> Voir le document</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img" style="font-size:44px"><i class="fa-solid fa-code"></i></div>
+        <div class="project-body">
+          <div class="project-cat">Développement — PHP</div>
+          <div class="project-title">Formulaire d'inscription HTML / CSS / JS / PHP</div>
+          <a class="table-link" href="https://ahounouevra-png.github.io/Formulaire-PHP/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Voir la présentation</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img" style="font-size:44px"><i class="fa-solid fa-boxes-packing"></i></div>
+        <div class="project-body">
+          <div class="project-cat">Déploiement — GLPI</div>
+          <div class="project-title">Déploiement de GLPI pour la gestion d'un parc informatique</div>
+          <a class="table-link" href="https://docs.google.com/presentation/d/1FqI1iym0Kino38zRsi-QxRndu6gzzPMk/edit?usp=sharing&ouid=112673871335991438808&rtpof=true&sd=true" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Voir la présentation</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-sep">
+
+    <div class="h3-styled"><i class="fa-solid fa-user-gear"></i> Stages</div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img" style="font-size:44px"><i class="fa-solid fa-building"></i></div>
+        <div class="project-body">
+          <div class="project-cat">Stage 1ʳᵉ année</div>
+          <div class="project-title">Modernisation de la supervision et interconnexion ITSM (IT Service Management, gestion des services informatiques) chez Labocéa</div>
+          <a class="table-link" href="https://ahounouevra-png.github.io/Galerie-photo/" target="_blank"><i class="fa-solid fa-file-pdf"></i> Voir le document</a>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- SYNTHÈSE -->
+  <section id="synthese">
+    <div class="section-label">BTS SIO — Épreuve E5</div>
+    <h2 class="section-title">Tableau de synthèse</h2>
+
+    <div class="pdf-banner">
+      <i class="fa-solid fa-file-pdf" style="font-size:20px; color:#8a6400;"></i>
+      <span>Document officiel :</span>
+      <a href="dossier/TABLEAU-DE-SYNTHESE - PDF.pdf" target="_blank">Télécharger le tableau de synthèse (PDF)</a>
+    </div>
+
+    <div style="margin-bottom:16px; font-size:13px; color: var(--muted);">
+      <strong style="color:var(--text)">NOM :</strong> AHOUNOU EVRARD &nbsp;|&nbsp;
+      <strong style="color:var(--text)">Centre :</strong> MY DIGITALSCHOOL RENNES &nbsp;|&nbsp;
+      <strong style="color:var(--text)">Option :</strong> SISR &nbsp;|&nbsp;
+      <strong style="color:var(--text)">Session :</strong> 2025-2027
+    </div>
+  </section>
+
+  <!-- VEILLE TECHNOLOGIQUE -->
+  <section id="veille">
+    <div class="section-label">Information & Sécurité</div>
+    <h2 class="section-title">Veille Technologique</h2>
+
+    <div class="veille-cards">
+      <div class="veille-card">
+        <div class="v-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="v-title">Sujet de Veille</div>
+        <p>Suivi régulier des évolutions en cybersécurité, des nouvelles vulnérabilités (CVE) et des recommandations de l'ANSSI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="section-label">Badges & diplômes</div>
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-solid fa-desktop"></i></div>
+        <div>
+          <div class="cert-title">IT Hardware Essentials — Niveau 1</div>
+          <div class="cert-org">Cisco NetAcad · 2025</div>
+          <a class="cert-link" href="https://www.credly.com/badges/4b847b41-3d5a-4a56-bbfe-180bc1c4fec2/public_url" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Voir le badge Credly
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <div>
+          <div class="cert-title">Networking Basics — Niveau 1</div>
+          <div class="cert-org">Cisco NetAcad · 2026</div>
+          <a class="cert-link" href="https://www.credly.com/badges/078ef6f2-1343-4c2d-901f-511a7dd6d7bf/public_url" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Voir le badge Credly
+          </a>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <div class="cert-title">Cybersecurity Essentials — Niveau 1</div>
+          <div class="cert-org">Cisco NetAcad · 2025</div>
+          <a class="cert-link" href="https://www.credly.com/badges/0e9faeaa-5ce7-45be-84c4-8d9eedbcecc7/public_url" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Voir le badge Credly
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <div class="section-label">Document</div>
+    <h2 class="section-title">Curriculum Vitae</h2>
+
+    <div class="cv-section">
+      <div class="cv-icon"><i class="fa-solid fa-file-pdf"></i></div>
+      <a href="dossier/AHOUNOU_EvrardCV.pdf" target="_blank" class="btn-primary">
+        <i class="fa-solid fa-download"></i> Télécharger mon CV complet (PDF)
+      </a>
+    </div>
+  </section>
+
+  
+  <!-- CONTACT -->
+  <section id="contact">
+  
+    <h2 class="section-title">Contact</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: start;">
+      
+     <!-- Formulaire de contact Formspree via AJAX -->
+<div class="glass-card">
+  <form id="my-form" action="https://formspree.io/f/mqerooyq" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+    
+    <div>
+      <label for="name" style="display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 6px;">Votre Nom / Prénom</label>
+      <input type="text" id="name" name="name" required placeholder="Ex: Jean marcus " style="width: 100%; padding: 12px 14px; border: 2px solid var(--ink); border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; background: #fff;">
+    </div>
+
+    <div>
+      <label for="email" style="display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 6px;">Votre Email</label>
+      <input type="email" id="email" name="_replyto" required placeholder="votre@email.com" style="width: 100%; padding: 12px 14px; border: 2px solid var(--ink); border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; background: #fff;">
+    </div>
+
+    <div>
+      <label for="message" style="display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 6px;">Votre Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Bonjour Evrard, je vous contacte concernant..." style="width: 100%; padding: 12px 14px; border: 2px solid var(--ink); border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none; resize: vertical; background: #fff;"></textarea>
+    </div>
+
+    <button id="my-form-button" type="submit" class="btn-primary" style="justify-content: center; cursor: pointer; border: 2px solid var(--ink); margin-top: 6px;">
+      <i class="fa-solid fa-paper-plane"></i> Envoyer le message
+    </button>
+
+    <!-- Zone d'affichage du résultat -->
+    <p id="my-form-status" style="font-size: 14px; font-weight: 700; text-align: center; margin-top: 10px;"></p>
+
+  </form>
+</div>
+
+
+      <!-- Liens de contact rapide -->
+      <div class="contact-grid" style="grid-template-columns: 1fr; margin-bottom: 0;">
+        <a href="https://linkedin.com" target="_blank" class="contact-item">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-val">Voir mon profil LinkedIn</div>
+        </a>
+
+        <a href="ahounouevrard04@gmail.com" class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-label">Email direct</div>
+          <div class="contact-val">Ouvrir mon mail</div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- BOTTOM TAB BAR (Mobile) -->
+<div class="tabbar">
+  <div class="tabbar-inner">
+    <button class="tab-btn active" onclick="showSection('accueil')"><i class="fa-solid fa-house tic"></i>Accueil</button>
+    <button class="tab-btn" onclick="showSection('presentation')"><i class="fa-solid fa-user tic"></i>Présentation</button>
+    <button class="tab-btn" onclick="showSection('competences')"><i class="fa-solid fa-wrench tic"></i>Compétences</button>
+    <button class="tab-btn" onclick="showSection('projets')"><i class="fa-solid fa-briefcase tic"></i>Projets</button>
+    <button class="tab-btn" onclick="showSection('synthese')"><i class="fa-solid fa-chart-column tic"></i>Synthèse</button>
+    <button class="tab-btn" onclick="showSection('contact')"><i class="fa-solid fa-envelope tic"></i>Contact</button>
+  </div>
+</div>
+
+
+<!-- Script du portfolio : navigation + formulaire de contact (voir js/script.js) -->
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
